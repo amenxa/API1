@@ -1,0 +1,216 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\ApiTest\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|c:\\users\\admin\\source\\repos\\apitest\\apitest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|solutionrelative:apitest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|c:\\users\\admin\\source\\repos\\apitest\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|solutionrelative:controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|c:\\users\\admin\\source\\repos\\apitest\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|solutionrelative:controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|c:\\users\\admin\\source\\repos\\apitest\\data\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|solutionrelative:data\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|c:\\users\\admin\\source\\repos\\apitest\\data\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|solutionrelative:data\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|c:\\users\\admin\\source\\repos\\apitest\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|c:\\users\\admin\\source\\repos\\apitest\\data\\sotrerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|solutionrelative:data\\sotrerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|c:\\users\\admin\\source\\repos\\apitest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|c:\\users\\admin\\source\\repos\\apitest\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|c:\\users\\admin\\source\\repos\\apitest\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|c:\\users\\admin\\source\\repos\\apitest\\migrations\\20241110220025_nowf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|solutionrelative:migrations\\20241110220025_nowf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|c:\\users\\admin\\source\\repos\\apitest\\apitest.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|solutionrelative:apitest.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Data\\Item.cs",
+              "RelativeDocumentMoniker": "Data\\Item.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Data\\Item.cs",
+              "RelativeToolTip": "Data\\Item.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T21:24:26.318Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SotreRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Data\\SotreRepository.cs",
+              "RelativeDocumentMoniker": "Data\\SotreRepository.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Data\\SotreRepository.cs",
+              "RelativeToolTip": "Data\\SotreRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T22:39:23.649Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ItemController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Controllers\\ItemController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ItemController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Controllers\\ItemController.cs",
+              "RelativeToolTip": "Controllers\\ItemController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACMAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T00:42:41.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Controllers\\CategoryController.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAAAE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T22:19:30.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20241110220025_nowf.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Migrations\\20241110220025_nowf.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241110220025_nowf.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Migrations\\20241110220025_nowf.cs",
+              "RelativeToolTip": "Migrations\\20241110220025_nowf.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T22:00:26.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Data\\Category.cs",
+              "RelativeDocumentMoniker": "Data\\Category.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Data\\Category.cs",
+              "RelativeToolTip": "Data\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T21:22:19.986Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T21:02:11.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-10T20:39:00.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ApiTest.http",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ApiTest\\ApiTest.http",
+              "RelativeDocumentMoniker": "ApiTest.http",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ApiTest\\ApiTest.http",
+              "RelativeToolTip": "ApiTest.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-11-10T20:38:51.919Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApiTest.csproj",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ApiTest\\ApiTest.csproj",
+              "RelativeDocumentMoniker": "ApiTest.csproj",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ApiTest\\ApiTest.csproj",
+              "RelativeToolTip": "ApiTest.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-10T20:35:05.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ApiTest\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ApiTest\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-10T20:34:55.625Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T20:34:47.424Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
