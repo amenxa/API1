@@ -1,8 +1,10 @@
 ﻿using ApiTest.Data;
+using ApiTest.Data.DTOS;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 
 namespace ApiTest.Controllers
 {
@@ -10,54 +12,84 @@ namespace ApiTest.Controllers
     [ApiController]
     public class CategoryController : ControllerBase
     {
-        public CategoryController(AppDbContext db)
+        private readonly ILogger<CategoryController> logger;
+        public CategoryController(AppDbContext db, ILogger<CategoryController> logger)
         {
-
+            this.logger = logger;
             this._db = db;
 
         }
 
         private readonly AppDbContext _db;
-        [HttpGet]
+        [HttpGet("GetALL")]
+        [ProducesResponseType(200, Type = typeof(Category))]
         public async Task<IActionResult> GetCatigries()
         {
-            var cats = await _db.Categories.ToListAsync(); 
+
+            var cats = _db.Categories.Select(c => new CategoryDTO()
+            {
+                Id = c.Id,
+                Name = c.Name,
+
+            });
             return Ok(cats);
         }
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetCatigory(int id )
+        [HttpGet("{id}/getbyID")]
+        [ProducesResponseType(200, Type = typeof(Category))]
+        [ProducesResponseType(404, Type = typeof(string))]
+        public async Task<IActionResult> GetCatigory(int id)
         {
             Category c = await _db.Categories.SingleOrDefaultAsync(x => x.Id == id);
 
-            if (c == null) return NotFound($"Not Found{id} , there is no category with id = {id} ");
 
-            return Ok(c);
+            if (c == null)
+            {
+                logger.LogError($"id {id} not found");
+                return NotFound($"Not Found{id} , there is no category with id = {id} ");
+
+            }
+            var cdto = new CategoryDTO()
+            {
+                Id = c.Id,
+                Name = c.Name,
+            };
+
+            return Ok(cdto);
         }
         [HttpPost]
-        public async Task<IActionResult> addCategory(string cat , string des)
+        [Route("{categoryNAme:alpha}/addCAtegory")]
+        [ProducesResponseType(200, Type = typeof(Category))]
+        public async Task<IActionResult> addCategory(string cat, string des)
         {
             Category c = new Category() { Name = cat, Description = des };
             await _db.Categories.AddAsync(c);
+            CategoryDTO categoryDTO = new CategoryDTO()
+            {
+                Id = c.Id,
+                Name = c.Name,
+            };
             _db.SaveChanges();
-            return Ok(c);
+            return Ok(categoryDTO);
         }
 
-        [HttpPut]
-        [ProducesResponseType(200,Type = typeof(Category)) ]
+        [HttpPut("UPDATECATEGORY")]
+        [ProducesResponseType(200, Type = typeof(Category))]
         [ProducesResponseType(404, Type = typeof(string))]
-        public async Task<IActionResult> Updatecategory(Category cat)
+        public async Task<IActionResult> Updatecategory(CategoryDTO cat)
         {
-            Category c = await _db.Categories.SingleOrDefaultAsync(x=>x.Id==cat.Id);
+            Category c = await _db.Categories.SingleOrDefaultAsync(x => x.Id == cat.Id);
 
             if (c == null) return NotFound($"Not Found{cat.Id} , there is no category with id = {cat.Id} ");
-            c.Name= cat.Name;
-            c.Description= cat.Description;
+            c.Name = cat.Name;
+
             _db.SaveChanges();
-            return Ok(c);
+            return Ok(cat);
 
         }
 
-        [HttpDelete]
+        [HttpDelete("{id:int}/DeleteById")]
+        [ProducesResponseType(200, Type = typeof(Category))]
+        [ProducesResponseType(404, Type = typeof(string))]
         public async Task<IActionResult> Removecategory(int id)
         {
             Category c = await _db.Categories.SingleOrDefaultAsync(x => x.Id == id);
@@ -65,18 +97,21 @@ namespace ApiTest.Controllers
             if (c == null) return NotFound($"Not Found{id} , there is no category with id = {id} ");
              _db.Categories.Remove(c);
             _db.SaveChanges();
-            return Ok(c);
+            return Ok(true);
         }
         [HttpPatch("{id}")]
-        public async Task<IActionResult> pathcsomething([FromBody] JsonPatchDocument<Category> p, [FromRoute] int id)
+        [ProducesResponseType(200, Type = typeof(Category))]
+        [ProducesResponseType(404, Type = typeof(string))]
+        public async Task<IActionResult> pathcsomething([FromBody] JsonPatchDocument<CategoryDTO> p, [FromRoute] int id)
         {
             Category c = await _db.Categories.SingleOrDefaultAsync(x => x.Id == id);
             if (c == null) return NotFound($"Not Found{id} , there is no category with id = {id} ");
-
-            p.ApplyTo(c);
+            CategoryDTO categoryDTO = new CategoryDTO() { Id=c.Id , Name = c.Name};
+            p.ApplyTo(categoryDTO);
+            c.Name = categoryDTO.Name;
             await _db.SaveChangesAsync();
-            return Ok(c);
+            return Ok(categoryDTO);
         }
-
+               
     }
 }
