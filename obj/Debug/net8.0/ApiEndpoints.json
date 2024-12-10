@@ -1,43 +1,8 @@
 [
   {
     "ContainingType": "ApiTest.Controllers.CategoryController",
-    "Method": "Removecategory",
-    "RelativePath": "api/Category",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "ApiTest.Data.Category",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      },
-      {
-        "Type": "System.String",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 404
-      }
-    ]
-  },
-  {
-    "ContainingType": "ApiTest.Controllers.CategoryController",
     "Method": "addCategory",
-    "RelativePath": "api/Category/{categoryNAme}/addCAtegory",
+    "RelativePath": "api/Category/{cat}/{des}/addCAtegory",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -45,16 +10,11 @@
       {
         "Name": "cat",
         "Type": "System.String",
-        "IsRequired": false
+        "IsRequired": true
       },
       {
         "Name": "des",
         "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "categoryNAme",
-        "Type": "",
         "IsRequired": true
       }
     ],
@@ -83,6 +43,41 @@
         "Type": "Microsoft.AspNetCore.JsonPatch.Operations.Operation[]",
         "IsRequired": true
       },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ApiTest.Data.Category",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "ApiTest.Controllers.CategoryController",
+    "Method": "Removecategory",
+    "RelativePath": "api/Category/{id}/DeleteById",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
       {
         "Name": "id",
         "Type": "System.Int32",
@@ -197,6 +192,15 @@
           "text/json"
         ],
         "StatusCode": 404
+      },
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 402
       }
     ]
   },

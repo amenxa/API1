@@ -3,44 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\ApiTest\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|c:\\users\\admin\\source\\repos\\apitest\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|solutionrelative:controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|c:\\users\\admin\\source\\repos\\apitest\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|solutionrelative:controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|c:\\users\\admin\\source\\repos\\apitest\\config\\automapperconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|solutionrelative:config\\automapperconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|c:\\users\\admin\\source\\repos\\apitest\\data\\dtos\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|solutionrelative:data\\dtos\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|c:\\users\\admin\\source\\repos\\apitest\\data\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|solutionrelative:data\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|c:\\users\\admin\\source\\repos\\apitest\\data\\depdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|solutionrelative:data\\depdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|c:\\users\\admin\\source\\repos\\apitest\\data\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|solutionrelative:data\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|c:\\users\\admin\\source\\repos\\apitest\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|c:\\users\\admin\\source\\repos\\apitest\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|solutionrelative:controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|c:\\users\\admin\\source\\repos\\apitest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|c:\\users\\admin\\source\\repos\\apitest\\apitest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|solutionrelative:apitest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|c:\\users\\admin\\source\\repos\\apitest\\data\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|solutionrelative:data\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|c:\\users\\admin\\source\\repos\\apitest\\data\\sotrerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|solutionrelative:data\\sotrerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|c:\\users\\admin\\source\\repos\\apitest\\data\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|solutionrelative:data\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|c:\\users\\admin\\source\\repos\\apitest\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|solutionrelative:controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|c:\\users\\admin\\source\\repos\\apitest\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|c:\\users\\admin\\source\\repos\\apitest\\apitest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|solutionrelative:apitest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3091BAD2-1C7B-473E-911F-E73990809C8A}|ApiTest.csproj|c:\\users\\admin\\source\\repos\\apitest\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -66,11 +62,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Item.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Data\\Item.cs",
               "RelativeDocumentMoniker": "Data\\Item.cs",
@@ -84,12 +80,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "AutoMapperconfig.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ApiTest\\config\\AutoMapperconfig.cs",
+              "RelativeDocumentMoniker": "config\\AutoMapperconfig.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ApiTest\\config\\AutoMapperconfig.cs",
+              "RelativeToolTip": "config\\AutoMapperconfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T23:24:10.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "CategoryDTO.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Data\\DTOS\\CategoryDTO.cs",
               "RelativeDocumentMoniker": "Data\\DTOS\\CategoryDTO.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Data\\DTOS\\CategoryDTO.cs*",
-              "RelativeToolTip": "Data\\DTOS\\CategoryDTO.cs*",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Data\\DTOS\\CategoryDTO.cs",
+              "RelativeToolTip": "Data\\DTOS\\CategoryDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-07T23:13:26.267Z",
@@ -97,58 +106,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Depdemo.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Data\\Depdemo.cs",
-              "RelativeDocumentMoniker": "Data\\Depdemo.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Data\\Depdemo.cs",
-              "RelativeToolTip": "Data\\Depdemo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T21:55:51.228Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "SotreRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Data\\SotreRepository.cs",
-              "RelativeDocumentMoniker": "Data\\SotreRepository.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Data\\SotreRepository.cs",
-              "RelativeToolTip": "Data\\SotreRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T22:39:23.649Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "ItemController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Controllers\\ItemController.cs",
               "RelativeDocumentMoniker": "Controllers\\ItemController.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Controllers\\ItemController.cs",
               "RelativeToolTip": "Controllers\\ItemController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAB8AAABTAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAIBJwB8AAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-12T00:42:41.566Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "CategoryController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "Controllers\\CategoryController.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Controllers\\CategoryController.cs*",
-              "RelativeToolTip": "Controllers\\CategoryController.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHEAAAAJAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Controllers\\CategoryController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAAB4AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-10T22:19:30.365Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "20241110220025_nowf.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Migrations\\20241110220025_nowf.cs",
               "RelativeDocumentMoniker": "Migrations\\20241110220025_nowf.cs",
@@ -156,24 +140,25 @@
               "RelativeToolTip": "Migrations\\20241110220025_nowf.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T22:00:26.696Z"
+              "WhenOpened": "2024-11-10T22:00:26.696Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Data\\Category.cs",
               "RelativeDocumentMoniker": "Data\\Category.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Data\\Category.cs",
               "RelativeToolTip": "Data\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-10T21:22:19.986Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
@@ -186,19 +171,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Properties\\launchSettings.json",
               "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwBoAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-10T20:39:00.733Z"
+              "WhenOpened": "2024-11-10T20:39:00.733Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "ApiTest.http",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ApiTest\\ApiTest.http",
               "RelativeDocumentMoniker": "ApiTest.http",
@@ -206,7 +192,8 @@
               "RelativeToolTip": "ApiTest.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-11-10T20:38:51.919Z"
+              "WhenOpened": "2024-11-10T20:38:51.919Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -214,16 +201,16 @@
               "Title": "ApiTest.csproj",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ApiTest\\ApiTest.csproj",
               "RelativeDocumentMoniker": "ApiTest.csproj",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ApiTest\\ApiTest.csproj*",
-              "RelativeToolTip": "ApiTest.csproj*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ApiTest\\ApiTest.csproj",
+              "RelativeToolTip": "ApiTest.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-11-10T20:35:05.612Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ApiTest\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -231,17 +218,18 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-10T20:34:55.625Z"
+              "WhenOpened": "2024-11-10T20:34:55.625Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\ApiTest\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-10T20:34:47.424Z",
               "EditorCaption": ""

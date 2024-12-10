@@ -1,5 +1,6 @@
 ﻿using ApiTest.Data;
 using ApiTest.Data.DTOS;
+using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
@@ -13,10 +14,12 @@ namespace ApiTest.Controllers
     public class CategoryController : ControllerBase
     {
         private readonly ILogger<CategoryController> logger;
-        public CategoryController(AppDbContext db, ILogger<CategoryController> logger)
+        private readonly IMapper mapper;
+        public CategoryController(AppDbContext db, ILogger<CategoryController> logger , IMapper mapper)
         {
             this.logger = logger;
             this._db = db;
+            this.mapper = mapper;
 
         }
 
@@ -25,14 +28,8 @@ namespace ApiTest.Controllers
         [ProducesResponseType(200, Type = typeof(Category))]
         public async Task<IActionResult> GetCatigries()
         {
-
-            var cats = _db.Categories.Select(c => new CategoryDTO()
-            {
-                Id = c.Id,
-                Name = c.Name,
-
-            });
-            return Ok(cats);
+            var DTODATA = mapper.Map<List<CategoryDTO>>(_db.Categories.ToList());
+            return Ok(DTODATA);
         }
         [HttpGet("{id}/getbyID")]
         [ProducesResponseType(200, Type = typeof(Category))]
@@ -48,26 +45,18 @@ namespace ApiTest.Controllers
                 return NotFound($"Not Found{id} , there is no category with id = {id} ");
 
             }
-            var cdto = new CategoryDTO()
-            {
-                Id = c.Id,
-                Name = c.Name,
-            };
+            var cdto = mapper.Map<CategoryDTO>(c);
 
             return Ok(cdto);
         }
         [HttpPost]
-        [Route("{categoryNAme:alpha}/addCAtegory")]
+        [Route("{cat:alpha}/{des:alpha}/addCAtegory")]
         [ProducesResponseType(200, Type = typeof(Category))]
         public async Task<IActionResult> addCategory(string cat, string des)
         {
             Category c = new Category() { Name = cat, Description = des };
             await _db.Categories.AddAsync(c);
-            CategoryDTO categoryDTO = new CategoryDTO()
-            {
-                Id = c.Id,
-                Name = c.Name,
-            };
+            CategoryDTO categoryDTO = mapper.Map<CategoryDTO>(c);
             _db.SaveChanges();
             return Ok(categoryDTO);
         }
@@ -75,13 +64,15 @@ namespace ApiTest.Controllers
         [HttpPut("UPDATECATEGORY")]
         [ProducesResponseType(200, Type = typeof(Category))]
         [ProducesResponseType(404, Type = typeof(string))]
+        [ProducesResponseType(402, Type = typeof(string))]
         public async Task<IActionResult> Updatecategory(CategoryDTO cat)
         {
             Category c = await _db.Categories.SingleOrDefaultAsync(x => x.Id == cat.Id);
 
             if (c == null) return NotFound($"Not Found{cat.Id} , there is no category with id = {cat.Id} ");
             c.Name = cat.Name;
-
+            var c1 = new Category() { Id = 3, Name = "c.Name" };
+            _db.Categories.Update(c1);
             _db.SaveChanges();
             return Ok(cat);
 
@@ -106,7 +97,7 @@ namespace ApiTest.Controllers
         {
             Category c = await _db.Categories.SingleOrDefaultAsync(x => x.Id == id);
             if (c == null) return NotFound($"Not Found{id} , there is no category with id = {id} ");
-            CategoryDTO categoryDTO = new CategoryDTO() { Id=c.Id , Name = c.Name};
+            CategoryDTO categoryDTO = mapper.Map<CategoryDTO>(c);
             p.ApplyTo(categoryDTO);
             c.Name = categoryDTO.Name;
             await _db.SaveChangesAsync();

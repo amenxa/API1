@@ -1,3 +1,4 @@
+using ApiTest.config;
 using ApiTest.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -7,6 +8,7 @@ builder.Logging.ClearProviders();
 builder.Logging.AddConsole();
 builder.Logging.AddDebug();
 
+builder.Services.AddAutoMapper(typeof(AutoMapperconfig));
 // Add services to the container.
 builder.Services.AddDbContext<AppDbContext>(options =>
      options.UseMySql(builder.Configuration.GetConnectionString("MyConnection"),

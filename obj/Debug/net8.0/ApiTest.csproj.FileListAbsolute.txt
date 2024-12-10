@@ -130,3 +130,5 @@ C:\Users\Admin\source\repos\ApiTest\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\Admin\source\repos\ApiTest\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\Admin\source\repos\ApiTest\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
 C:\Users\Admin\source\repos\ApiTest\obj\Debug\net8.0\ApiTest.sourcelink.json
+C:\Users\Admin\source\repos\ApiTest\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\Admin\source\repos\ApiTest\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
