@@ -1,5 +1,6 @@
 ﻿using ApiTest.Data;
 using ApiTest.Data.DTOS;
+using ApiTest.Repository;
 using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.JsonPatch;
@@ -15,28 +16,27 @@ namespace ApiTest.Controllers
     {
         private readonly ILogger<CategoryController> logger;
         private readonly IMapper mapper;
-        public CategoryController(AppDbContext db, ILogger<CategoryController> logger , IMapper mapper)
+        private readonly ICategoryRepo repo;
+        public CategoryController(ICategoryRepo repo , ILogger<CategoryController> logger , IMapper mapper)
         {
             this.logger = logger;
-            this._db = db;
             this.mapper = mapper;
-
+            this.repo = repo;
         }
 
-        private readonly AppDbContext _db;
         [HttpGet("GetALL")]
         [ProducesResponseType(200, Type = typeof(Category))]
         public async Task<IActionResult> GetCatigries()
         {
-            var DTODATA = mapper.Map<List<CategoryDTO>>(_db.Categories.ToList());
+            var DTODATA = mapper.Map<List<CategoryDTO>>(await repo.GetALL());
             return Ok(DTODATA);
         }
-        [HttpGet("{id}/getbyID")]
+        [HttpGet("{id}/getbyID", Name = "GetCatigory")]
         [ProducesResponseType(200, Type = typeof(Category))]
         [ProducesResponseType(404, Type = typeof(string))]
         public async Task<IActionResult> GetCatigory(int id)
         {
-            Category c = await _db.Categories.SingleOrDefaultAsync(x => x.Id == id);
+            Category c = await repo.GetById(id);
 
 
             if (c == null)
@@ -50,30 +50,27 @@ namespace ApiTest.Controllers
             return Ok(cdto);
         }
         [HttpPost]
-        [Route("{cat:alpha}/{des:alpha}/addCAtegory")]
+        [Route("{cat:alpha}/{des:alpha}/addCAtegory", Name = "addCategory")]
         [ProducesResponseType(200, Type = typeof(Category))]
         public async Task<IActionResult> addCategory(string cat, string des)
         {
             Category c = new Category() { Name = cat, Description = des };
-            await _db.Categories.AddAsync(c);
+            c = await repo.AddCategory(c);
             CategoryDTO categoryDTO = mapper.Map<CategoryDTO>(c);
-            _db.SaveChanges();
-            return Ok(categoryDTO);
+            return CreatedAtRoute("GetCatigory", new CategoryDTO() { Name = cat }, categoryDTO);
         }
 
         [HttpPut("UPDATECATEGORY")]
         [ProducesResponseType(200, Type = typeof(Category))]
         [ProducesResponseType(404, Type = typeof(string))]
-        [ProducesResponseType(402, Type = typeof(string))]
         public async Task<IActionResult> Updatecategory(CategoryDTO cat)
         {
-            Category c = await _db.Categories.SingleOrDefaultAsync(x => x.Id == cat.Id);
-
-            if (c == null) return NotFound($"Not Found{cat.Id} , there is no category with id = {cat.Id} ");
-            c.Name = cat.Name;
-            var c1 = new Category() { Id = 3, Name = "c.Name" };
-            _db.Categories.Update(c1);
-            _db.SaveChanges();
+            bool OK = await repo.UpdateCategory(cat);
+            if (!OK)
+            {
+                logger.LogError($"id {cat.Id} not found");
+                return NotFound($"Not Found , there is no category with id = {cat.Id} ");
+            }
             return Ok(cat);
 
         }
@@ -83,11 +80,8 @@ namespace ApiTest.Controllers
         [ProducesResponseType(404, Type = typeof(string))]
         public async Task<IActionResult> Removecategory(int id)
         {
-            Category c = await _db.Categories.SingleOrDefaultAsync(x => x.Id == id);
-
-            if (c == null) return NotFound($"Not Found{id} , there is no category with id = {id} ");
-             _db.Categories.Remove(c);
-            _db.SaveChanges();
+            bool OK = await repo.RemoveCategory(id);
+            if (!OK) return NotFound($"Not Found{id} , there is no category with id = {id} ");
             return Ok(true);
         }
         [HttpPatch("{id}")]
@@ -95,12 +89,12 @@ namespace ApiTest.Controllers
         [ProducesResponseType(404, Type = typeof(string))]
         public async Task<IActionResult> pathcsomething([FromBody] JsonPatchDocument<CategoryDTO> p, [FromRoute] int id)
         {
-            Category c = await _db.Categories.SingleOrDefaultAsync(x => x.Id == id);
+            Category c = await repo.GetById(id , false);
             if (c == null) return NotFound($"Not Found{id} , there is no category with id = {id} ");
             CategoryDTO categoryDTO = mapper.Map<CategoryDTO>(c);
             p.ApplyTo(categoryDTO);
-            c.Name = categoryDTO.Name;
-            await _db.SaveChangesAsync();
+            c =mapper.Map<Category>(categoryDTO);
+            repo.patch(c);
             return Ok(categoryDTO);
         }
                

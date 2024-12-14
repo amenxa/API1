@@ -28,7 +28,8 @@
         ],
         "StatusCode": 200
       }
-    ]
+    ],
+    "EndpointName": "addCategory"
   },
   {
     "ContainingType": "ApiTest.Controllers.CategoryController",
@@ -138,7 +139,8 @@
         ],
         "StatusCode": 404
       }
-    ]
+    ],
+    "EndpointName": "GetCatigory"
   },
   {
     "ContainingType": "ApiTest.Controllers.CategoryController",
@@ -192,15 +194,6 @@
           "text/json"
         ],
         "StatusCode": 404
-      },
-      {
-        "Type": "System.String",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 402
       }
     ]
   },

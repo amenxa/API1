@@ -1,5 +1,6 @@
 using ApiTest.config;
 using ApiTest.Data;
+using ApiTest.Repository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,13 +9,13 @@ builder.Logging.ClearProviders();
 builder.Logging.AddConsole();
 builder.Logging.AddDebug();
 
-builder.Services.AddAutoMapper(typeof(AutoMapperconfig));
 // Add services to the container.
 builder.Services.AddDbContext<AppDbContext>(options =>
      options.UseMySql(builder.Configuration.GetConnectionString("MyConnection"),
          new MySqlServerVersion(new Version(10, 4, 32))
          ));
-
+builder.Services.AddAutoMapper(typeof(AutoMapperconfig));
+builder.Services.AddTransient<ICategoryRepo, CategoryRepo>();
 builder.Services.AddControllers().AddNewtonsoftJson();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
