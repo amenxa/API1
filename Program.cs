@@ -16,6 +16,9 @@ builder.Services.AddDbContext<AppDbContext>(options =>
          ));
 builder.Services.AddAutoMapper(typeof(AutoMapperconfig));
 builder.Services.AddTransient<ICategoryRepo, CategoryRepo>();
+
+builder.Services.AddScoped(typeof(ICommonRepo<>), typeof(CommonRepo<>));
+
 builder.Services.AddControllers().AddNewtonsoftJson();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

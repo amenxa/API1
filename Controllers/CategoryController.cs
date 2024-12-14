@@ -16,8 +16,8 @@ namespace ApiTest.Controllers
     {
         private readonly ILogger<CategoryController> logger;
         private readonly IMapper mapper;
-        private readonly ICategoryRepo repo;
-        public CategoryController(ICategoryRepo repo , ILogger<CategoryController> logger , IMapper mapper)
+        private readonly ICommonRepo<Category> repo;
+        public CategoryController(ICommonRepo<Category> repo , ILogger<CategoryController> logger , IMapper mapper)
         {
             this.logger = logger;
             this.mapper = mapper;
@@ -36,7 +36,7 @@ namespace ApiTest.Controllers
         [ProducesResponseType(404, Type = typeof(string))]
         public async Task<IActionResult> GetCatigory(int id)
         {
-            Category c = await repo.GetById(id);
+            Category c = await repo.GetById(x=>x.Id==id);
 
 
             if (c == null)
@@ -65,12 +65,15 @@ namespace ApiTest.Controllers
         [ProducesResponseType(404, Type = typeof(string))]
         public async Task<IActionResult> Updatecategory(CategoryDTO cat)
         {
-            bool OK = await repo.UpdateCategory(cat);
-            if (!OK)
+            var c = await repo.GetById(x => x.Id == cat.Id, false);
+            
+            if (c==null)
             {
                 logger.LogError($"id {cat.Id} not found");
                 return NotFound($"Not Found , there is no category with id = {cat.Id} ");
             }
+            c.Name = cat.Name;
+            repo.Update(c);
             return Ok(cat);
 
         }
@@ -80,7 +83,7 @@ namespace ApiTest.Controllers
         [ProducesResponseType(404, Type = typeof(string))]
         public async Task<IActionResult> Removecategory(int id)
         {
-            bool OK = await repo.RemoveCategory(id);
+            bool OK = await repo.RemoveCategory(x => x.Id == id);
             if (!OK) return NotFound($"Not Found{id} , there is no category with id = {id} ");
             return Ok(true);
         }
@@ -89,12 +92,12 @@ namespace ApiTest.Controllers
         [ProducesResponseType(404, Type = typeof(string))]
         public async Task<IActionResult> pathcsomething([FromBody] JsonPatchDocument<CategoryDTO> p, [FromRoute] int id)
         {
-            Category c = await repo.GetById(id , false);
+            Category c = await repo.GetById(x => x.Id == id , false);
             if (c == null) return NotFound($"Not Found{id} , there is no category with id = {id} ");
             CategoryDTO categoryDTO = mapper.Map<CategoryDTO>(c);
             p.ApplyTo(categoryDTO);
             c =mapper.Map<Category>(categoryDTO);
-            repo.patch(c);
+            repo.Update(c);
             return Ok(categoryDTO);
         }
                
